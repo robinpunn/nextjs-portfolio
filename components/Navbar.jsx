@@ -25,27 +25,27 @@ const Navbar = () => {
         {/*div to hold links and humberger menu <med screens*/}
         <div>
           <ul className='hidden md:flex'>
-              <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125'>
+              <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300'>
                 <Link href='/'>
                   Home
                 </Link>
               </li>
-              <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125'>
+              <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300'>
                 <Link href='/'>
                   About
                 </Link>
               </li>
-              <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125'>
+              <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300'>
                 <Link href='/'>
                   Skills
                 </Link>
                 </li>
-              <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125'>
+              <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300'>
                 <Link href='/'>
                   Projects
                 </Link>
               </li>
-              <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125'>
+              <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300'>
                 <Link href='/'>
                   Contact
                 </Link>

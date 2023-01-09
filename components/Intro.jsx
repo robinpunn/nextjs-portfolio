@@ -19,7 +19,7 @@ const Intro = () => {
                 <p className='py-4 text-gray-700  max-w-[70%] mx-auto'>
                     I'm a self taught web developer that strives to learn more and keep building.
                     I like learning new front-end frameworks by reading documentation and buidling projects.
-                    I learn more about the back-end by experiment with different server and databse combinations.
+                    I learn more about the back-end by experimenting with different server and databse combinations.
                     As I learn more, I revisit old projects to see how they can be improved.
                     I'm also learning as much as I can about blockchain technology and web3.
                     I'm currently exploring Ethereum and compatible layer 2 blockchains to learn Solidity and smart contract development.
