@@ -7,15 +7,15 @@ const Skills = () => {
         { name: 'HTML', img: '/../public/assets/skills/html1.png' },
         { name: 'CSS', img: '/../public/assets/skills/css1.png' },
         { name: 'JavaScript', img: '/../public/assets/skills/javascript.png' },
+        { name: 'Nodejs', img: '/../public/assets/skills/node.png'},
         { name: 'React', img: '/../public/assets/skills/react1.png'},
         { name: 'NextJs', img: '/../public/assets/skills/nextjs.png'},
-        { name: 'Nodejs', img: '/../public/assets/skills/node.png'},
-        { name: 'PHP', img: '/../public/assets/skills/react.png'},
         { name: 'SQL', img: '/../public/assets/skills/react.png'},
+        { name: 'Github', img: '/../public/assets/skills/github.png'},
         { name: 'Bootstrap', img: '/../public/assets/skills/bootstrap.png'},
         { name: 'Tailwind', img: '/../public/assets/skills/tailwind1.png'},
         { name: 'Figma', img: '/../public/assets/skills/figma.png'},
-        { name: 'Github', img: '/../public/assets/skills/github.png'},
+        { name: 'Gimp', img: '/../public/assets/skills/gimp.png'},
     ]
 
   return (

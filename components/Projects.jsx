@@ -12,25 +12,25 @@ const Projects = () => {
             link: '/'
         },
         {
-            title: 'NextJs Blog',
+            title: 'Headless WordPress',
             tech: 'NextJs/WordPress/GraphQl/Tailwind',
             img: '/../public/assets/projects/blog.png',
             link: '/'
         },
         {
-            title: 'ZTM Portfolio',
+            title: 'ZeroToMaster',
             tech: 'JavaScript/Node/React/Bootstrap/SQL',
             img: '/../public/assets/projects/ztm.png',
             link: '/'
         },
         {
-            title: 'freeCodeCamp Portfolio',
+            title: 'freeCodeCamp',
             tech: 'HTML/CSS',
             img: '/../public/assets/projects/free.png',
             link: '/'
         },
         {
-            title: 'Email Developer Portfolio',
+            title: 'Email Developer',
             tech: 'HTML Email Frameworks',
             img: '/../public/assets/projects/email.png',
             link: '/'
@@ -39,10 +39,14 @@ const Projects = () => {
 
   return (
     <div className='w-full'>
+        {/*container*/}
         <div className='max-w-[1240px] mx-auto px-2 py-16'>
+            {/*text*/}
             <p className='uppercase text-xl tracking-widest'>Projects</p>
+            {/*header*/}
             <h2 className='py-4'>What I've Built</h2>
-            <div className='grid md:grid-cols-2 gap-8'>
+            {/*grid container*/}
+            <div className='grid md:grid-cols-2 gap-24'>
               {/*projects placement, cycle through array, pass to ProjectCard component*/}
               {projects.map(project => (
                 <ProjectCard title={project.title} tech={project.tech} img={project.img} link={project.link} />
