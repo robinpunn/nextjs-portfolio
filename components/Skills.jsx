@@ -15,11 +15,11 @@ const Skills = () => {
         { name: 'Bootstrap', img: '/../public/assets/skills/bootstrap.png'},
         { name: 'Tailwind', img: '/../public/assets/skills/tailwind1.png'},
         { name: 'Figma', img: '/../public/assets/skills/figma.png'},
-        { name: 'Gimp', img: '/../public/assets/skills/gimp.png'},
+        { name: 'WordPress', img: '/../public/assets/skills/wordpress.png'},
     ]
 
   return (
-    <div className='w-full lg:h-screen p-2'>
+    <div id='skills' className='w-full lg:h-screen p-2'>
         {/*container*/}
         <div className='max-w-[1240px] flex flex-col justify-center h-full mx-auto'>
             {/*text*/}

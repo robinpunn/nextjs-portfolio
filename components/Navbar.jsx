@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai'
 import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
+import { sendStatusCode } from 'next/dist/server/api-utils'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -28,13 +29,15 @@ const Navbar = () => {
       {/* div contains navbar items: logo, links, <med screen: hamburger*/}
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         {/*logo*/}
-        <Image
-          width={125}
-          height={125}
-          src="/../public/assets/logo.png"
-          alt="logo"
-        />
-        {/*div to hold links and humberger menu <med screens*/}
+        <Link href='/'>
+          <Image
+            width={125}
+            height={125}
+            src="/../public/assets/logo.png"
+            alt="logo"
+          />
+        </Link>
+        {/*div to hold links and humberger menu < med screens*/}
         <div>
           <ul className='hidden md:flex'>
               <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300'>
@@ -43,22 +46,22 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300'>
-                <Link href='/'>
+                <Link href='/#about'>
                   About
                 </Link>
               </li>
               <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300'>
-                <Link href='/'>
+                <Link href='/#skills'>
                   Skills
                 </Link>
                 </li>
               <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300'>
-                <Link href='/'>
+                <Link href='/#projects'>
                   Projects
                 </Link>
               </li>
               <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300'>
-                <Link href='/'>
+                <Link href='/#contact'>
                   Contact
                 </Link>
               </li>
@@ -72,20 +75,23 @@ const Navbar = () => {
       {/*overlay when hamburger menu is selected*/}
       <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
         {/*sidebar menu*/}
-        <div className={nav
-                        ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:[45%] h-screen bg-slate-400 p-10 ease-in duration-500'
-                        : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
-              }
+        <div className=
+          {nav
+            ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:[45%] h-screen bg-slate-400 p-10 ease-in duration-500'
+            : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
+          }
         >
           <div>
             {/*sidebar logo*/}
             <div className='flex w-full items-center justify-between'>
-              <Image
-                src="/../public/assets/logo.png"
-                alt="/"
-                width={50}
-                height={50}
-              />
+              <Link href='/'>
+                <Image
+                  src="/../public/assets/logo.png"
+                  alt="/"
+                  width={50}
+                  height={50}
+                />
+              </Link>
               {/*close sidebar*/}
               <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer'>
                 <AiOutlineClose />
@@ -102,28 +108,28 @@ const Navbar = () => {
           <div className='py-4 flex flex-col'>
             {/*menu*/}
             <ul className='uppercase'>
-              <li className='mb-8 text-sm'>
+              <li onClick={() => setNav(false)} className='mb-8 text-sm'>
                 <Link href='/'>
                   Home
                 </Link>
               </li>
-              <li className='my-8 text-sm'>
-                <Link href='/'>
+              <li onClick={() => setNav(false)} className='my-8 text-sm'>
+                <Link href='/#about'>
                   About
                 </Link>
               </li>
-              <li className='my-8 text-sm'>
-                <Link href='/'>
+              <li onClick={() => setNav(false)} className='my-8 text-sm'>
+                <Link href='/#skills'>
                   Skills
                 </Link>
               </li>
-              <li className='my-8 text-sm'>
-                <Link href='/'>
+              <li onClick={() => setNav(false)} className='my-8 text-sm'>
+                <Link href='/#projects'>
                   Projects
                 </Link>
               </li>
-              <li className='my-8 text-sm'>
-                <Link href='/'>
+              <li onClick={() => setNav(false)} className='my-8 text-sm'>
+                <Link href='/#contact'>
                   Contact
                 </Link>
               </li>

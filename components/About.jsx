@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <div className='w-full md:h-screen p-2 flex items-center py-16 mt-80 xsm:mt-0'>
+    <div id="about" className='w-full md:h-screen p-2 flex items-center py-16 mt-80 xsm:mt-0'>
         {/*grid container*/}
         <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
             {/*first grid element spanning 2 columns*/}
