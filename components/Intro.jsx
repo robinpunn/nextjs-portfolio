@@ -27,13 +27,19 @@ const Intro = () => {
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <div className='rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-200'>
-                        <FaLinkedinIn/>
+                        <a href="https://linkedin.com/in/robin-punnoose-251633164" target='_blank' rel='noreferrer'>
+                            <FaLinkedinIn/>
+                        </a>
                     </div>
                     <div className='rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-200'>
-                        <FaGithub/>
+                        <a href="https://github.com/robinpunn" target='_blank' rel='noreferrer'>
+                            <FaGithub/>
+                        </a>
                     </div>
                     <div className='rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-200'>
-                        <AiOutlineMail/>
+                        <a href='mailto:robin.punnoose@protonmail.com' target='_blank' rel='noreferrer'>
+                            <AiOutlineMail/>
+                        </a>
                     </div>
                 </div>
             </div>

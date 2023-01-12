@@ -3,11 +3,31 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai'
 import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
-import { sendStatusCode } from 'next/dist/server/api-utils'
+import { useRouter } from 'next/router'
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
+  const [navBg, setNavBg] = useState('#94A3B8')
+  const [linkColor, setLinkColor] = useState('rgb(109 40 217)')
+  const router = useRouter()
+
+  useEffect(() => {
+    if(
+      router.asPath === '/tradebot' ||
+      router.asPath === '/headless' ||
+      router.asPath === '/ztm' ||
+      router.asPath === '/fcc' ||
+      router.asPath === '/email'
+    ) {
+      setNavBg('transparent')
+      setLinkColor('rgb(148 163 184)')
+    } else {
+      setNavBg('#94A3B8')
+      setLinkColor('rgb(109 40 217)')
+    }
+  },[router])
 
   const handleNav = () => {
     setNav(!nav)
@@ -25,7 +45,10 @@ const Navbar = () => {
   },[])
 
   return (
-    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
+    <div
+      style={{backgroundColor: `${navBg}`}}
+      className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}
+    >
       {/* div contains navbar items: logo, links, <med screen: hamburger*/}
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         {/*logo*/}
@@ -39,7 +62,7 @@ const Navbar = () => {
         </Link>
         {/*div to hold links and humberger menu < med screens*/}
         <div>
-          <ul className='hidden md:flex'>
+          <ul style={{color: `${linkColor}`}}  className='hidden md:flex'>
               <li className='ml-10 font-extrabold text-sm uppercase p-1 hover:bg-violet-800 hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300'>
                 <Link href='/'>
                   Home
@@ -139,13 +162,19 @@ const Navbar = () => {
               <p className='uppercase tracking-wide'>Get in touch with me</p>
               <div className='flex items center justify-between my-4 w-full sm:w-[80%]'>
                 <div className='rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
-                  <FaLinkedinIn/>
+                  <a href="https://linkedin.com/in/robin-punnoose-251633164" target='_blank' rel='noreferrer'>
+                    <FaLinkedinIn/>
+                  </a>
                 </div>
                 <div className='rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
-                  <FaGithub/>
+                  <a href="https://github.com/robinpunn" target='_blank' rel='noreferrer'>
+                    <FaGithub/>
+                  </a>
                 </div>
                 <div className='rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
-                  <AiOutlineMail/>
+                  <a href='mailto:robin.punnoose@protonmail.com' target='_blank' rel='noreferrer'>
+                    <AiOutlineMail/>
+                  </a>
                 </div>
               </div>
             </div>

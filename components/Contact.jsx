@@ -40,13 +40,19 @@ const Contact = () => {
                         <p className='uppercase pt-8'>Connect With Me</p>
                         <div className='flex items-center justify-between py-4'>
                             <div className='rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-200'>
-                                <FaLinkedinIn/>
+                                <a href="https://linkedin.com/in/robin-punnoose-251633164" target='_blank' rel='noreferrer'>
+                                    <FaLinkedinIn/>
+                                </a>
                             </div>
                             <div className='rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-200'>
-                                <FaGithub/>
+                                <a href="https://github.com/robinpunn" target='_blank' rel='noreferrer'>
+                                    <FaGithub/>
+                                </a>
                             </div>
                             <div className='rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-200'>
-                                <AiOutlineMail/>
+                                <a href={`mailto:robin.punnoose@protonmail.com`} target='_blank' rel='noreferrer'>
+                                    <AiOutlineMail/>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +61,11 @@ const Contact = () => {
                 {/*right*/}
                 <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-600 rounded-xl lg:p-4'>
                     <div className='p-4'>
-                        <form>
+                        <form
+                            action='https://getform.io'
+                            method='POST'
+                            encType='multipart/form-data'
+                        >
                             {/*name and number*/}
                             <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                                 <div className='flex flex-col'>
@@ -63,6 +73,7 @@ const Contact = () => {
                                     <input
                                         className='border-2 rounded-lg p-3 flex border-gray-600'
                                         type="text"
+                                        name='name'
                                     />
                                 </div>
                                 <div className='flex flex-col'>
@@ -70,6 +81,7 @@ const Contact = () => {
                                     <input
                                         className='border-2 rounded-lg p-3 flex border-gray-600'
                                         type="text"
+                                        name="phone"
                                     />
                                 </div>
                             </div>
@@ -79,6 +91,7 @@ const Contact = () => {
                                 <input
                                     className='border-2 rounded-lg p-3 flex border-gray-600'
                                     type="email"
+                                    name="email"
                                 />
                             </div>
                             {/*message subject*/}
@@ -87,12 +100,18 @@ const Contact = () => {
                                 <input
                                      className='border-2 rounded-lg p-3 flex border-gray-600'
                                      type="text"
+                                     name="subject"
                                  />
                             </div>
                             {/*message field*/}
                             <div className='flex flex-col py-2'>
                                 <label className='uppercase text-sm py-2'>Message</label>
-                                <textarea className='border-2 rounded-lg p-3 border-gray-400' rows='10'></textarea>
+                                <textarea
+                                    className='border-2 rounded-lg p-3 border-gray-400'
+                                    rows='10'
+                                    name="message"
+                                >
+                                </textarea>
                             </div>
                             <button className='w-full p-4 text-gray-100 mt-4 hover:bg-purple-900 ease-in duration-500'>Send Message</button>
                         </form>
