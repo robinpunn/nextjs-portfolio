@@ -96,7 +96,7 @@ const Contact = () => {
                                     name="email"
                                     required
                                 />
-                                <input type="hidden" name="_gotcha" style="display:none !important" />
+                                <input type="hidden" name="_gotcha" style={{display:"none !important"}} />
                             </div>
                             {/*message subject*/}
                             <div className='flex flex-col py-2'>

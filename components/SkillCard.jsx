@@ -7,7 +7,7 @@ const SkillCard = ({name,img}) => {
         {/*skill card styling*/}
         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
             {/*skills image container*/}
-            <div className='m-auto' key={img}>
+            <div className='m-auto'>
                 {/*skills image*/}
                 <Image
                   src={img}
@@ -18,7 +18,7 @@ const SkillCard = ({name,img}) => {
             </div>
             {/*skills text*/}
             <div className='flex flex-col items-center justify-center'>
-                <h3 key={name}>{name}</h3>
+                <h3>{name}</h3>
             </div>
         </div>
     </div>
