@@ -18,7 +18,7 @@ const SkillCard = ({name,img}) => {
             </div>
             {/*skills text*/}
             <div className='flex flex-col items-center justify-center'>
-                <h3>{name}</h3>
+                <h3 key={name}>{name}</h3>
             </div>
         </div>
     </div>
