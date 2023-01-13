@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import profile from '../public/assets/profile.png'
 
 const About = () => {
   return (
@@ -20,7 +21,7 @@ const About = () => {
                   className='rounded-xl'
                   width={500}
                   height={500}
-                  src="../public/assets/profile.png"
+                  src={profile}
                   alt="profile"
               />
             </div>

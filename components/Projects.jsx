@@ -1,5 +1,10 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
+import trade from '../public/assets/projects/trade.png'
+import blog from '../public/assets/projects/blog.png'
+import ztm from '../public/assets/projects/ztm.png'
+import free from '../public/assets/projects/free.png'
+import email from '../public/assets/projects/email.png'
 
 
 const Projects = () => {
@@ -8,31 +13,31 @@ const Projects = () => {
         {
             title: 'TradeBot',
             tech: 'HTML/CSS',
-            img: '../public/assets/projects/trade.png',
+            img: trade,
             link: '/tradebot'
         },
         {
             title: 'Headless WordPress',
             tech: 'NextJs/WordPress/GraphQl/Tailwind',
-            img: '../public/assets/projects/blog.png',
+            img: blog,
             link: '/headless'
         },
         {
             title: 'ZeroToMastery',
             tech: 'JavaScript/Node/React/Bootstrap/SQL',
-            img: '../public/assets/projects/ztm.png',
+            img: ztm,
             link: '/ztm'
         },
         {
             title: 'freeCodeCamp',
             tech: 'HTML/CSS',
-            img: '../public/assets/projects/free.png',
+            img: free,
             link: '/fcc'
         },
         {
             title: 'Email Developer',
             tech: 'HTML Email Frameworks',
-            img: '../public/assets/projects/email.png',
+            img: email,
             link: '/email'
         },
     ]

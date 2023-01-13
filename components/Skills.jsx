@@ -1,21 +1,33 @@
 import React from 'react'
 import SkillCard from './SkillCard'
+import html from '../public/assets/skills/html1.pung'
+import css from '../public/assets/skills/css1.png'
+import js from '../public/assets/skills/javascript.png'
+import node from '../public/assets/skills/node.png'
+import react from '../public/assets/skills/react1.png'
+import next from '../public/assets/skills/nextjs.png'
+import sql from '../public/assets/skills/sql.png'
+import git from '../public/assets/skills/github.png'
+import boot from '../public/assets/skills/bootstrap.png'
+import tail from '../public/assets/skills/tailwind1.png'
+import figma from '../public/assets/skills/figma.png'
+import word from '../public/assets/skills/wordpress.png'
 
 const Skills = () => {
     {/*add skills here*/}
     const skills = [
-        { name: 'HTML', img: '../public/assets/skills/html1.png' },
-        { name: 'CSS', img: '../public/assets/skills/css1.png' },
-        { name: 'JavaScript', img: '../public/assets/skills/javascript.png' },
-        { name: 'Nodejs', img: '../public/assets/skills/node.png'},
-        { name: 'React', img: '../public/assets/skills/react1.png'},
-        { name: 'NextJs', img: '../public/assets/skills/nextjs.png'},
-        { name: 'SQL', img: '../public/assets/skills/react.png'},
-        { name: 'Github', img: '../public/assets/skills/github.png'},
-        { name: 'Bootstrap', img: '../public/assets/skills/bootstrap.png'},
-        { name: 'Tailwind', img: '../public/assets/skills/tailwind1.png'},
-        { name: 'Figma', img: '../public/assets/skills/figma.png'},
-        { name: 'WordPress', img: '../public/assets/skills/wordpress.png'},
+        { name: 'HTML', img: html},
+        { name: 'CSS', img: css},
+        { name: 'JavaScript', img: js},
+        { name: 'Nodejs', img: node},
+        { name: 'React', img: react},
+        { name: 'NextJs', img: next},
+        { name: 'SQL', img: sql },
+        { name: 'Github', img: git},
+        { name: 'Bootstrap', img: boot},
+        { name: 'Tailwind', img: tail},
+        { name: 'Figma', img: figma},
+        { name: 'WordPress', img: word},
     ]
 
   return (
