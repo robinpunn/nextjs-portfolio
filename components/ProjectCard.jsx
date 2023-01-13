@@ -5,10 +5,9 @@ import Link from 'next/link'
 const ProjectCard = ({title,tech,img,link}) => {
   return (
     // card container
-    <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-600 rounded-xl group hover:bg-gradient-to-r from-violet-500 to-fuchsia-500'>
+    <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-600 rounded-xl group hover:bg-gradient-to-r from-violet-500 to-fuchsia-500' key={img}>
         {/*project image*/}
         <Image
-            key = {title}
             className="rounded-xl group-hover:opacity-10"
             src={img}
             width={1200}

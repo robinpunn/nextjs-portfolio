@@ -7,10 +7,9 @@ const SkillCard = ({name,img}) => {
         {/*skill card styling*/}
         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
             {/*skills image container*/}
-            <div className='m-auto'>
+            <div className='m-auto' key={img}>
                 {/*skills image*/}
                 <Image
-                  key={name}
                   src={img}
                   alt={name}
                   width={100}

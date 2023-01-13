@@ -27,10 +27,10 @@ const Skills = () => {
             {/*title*/}
             <h2 className='py-4'>What I Can Do</h2>
             {/*skills container*/}
-            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8' key={skills.img}>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
                 {/*skills placement, cycle through array, pass to SkillCards component*/}
                 {skills.map(skill => (
-                    <SkillCard name={skill.name} img={skill.img} />
+                    <SkillCard key={skill.img} name={skill.name} img={skill.img} />
                 ))}
             </div>
         </div>
