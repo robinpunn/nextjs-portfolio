@@ -62,7 +62,8 @@ const Contact = () => {
                 <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-600 rounded-xl lg:p-4'>
                     <div className='p-4'>
                         <form
-                            action='https://getform.io'
+                            target='_blank'
+                            action='https://getform.io/f/3504c3a5-4c7a-498d-939f-83c6d406a0e0'
                             method='POST'
                             encType='multipart/form-data'
                         >
@@ -74,6 +75,7 @@ const Contact = () => {
                                         className='border-2 rounded-lg p-3 flex border-gray-600'
                                         type="text"
                                         name='name'
+                                        required
                                     />
                                 </div>
                                 <div className='flex flex-col'>
@@ -92,7 +94,9 @@ const Contact = () => {
                                     className='border-2 rounded-lg p-3 flex border-gray-600'
                                     type="email"
                                     name="email"
+                                    required
                                 />
+                                <input type="hidden" name="_gotcha" style="display:none !important" />
                             </div>
                             {/*message subject*/}
                             <div className='flex flex-col py-2'>
@@ -101,6 +105,7 @@ const Contact = () => {
                                      className='border-2 rounded-lg p-3 flex border-gray-600'
                                      type="text"
                                      name="subject"
+                                     required
                                  />
                             </div>
                             {/*message field*/}
@@ -109,11 +114,19 @@ const Contact = () => {
                                 <textarea
                                     className='border-2 rounded-lg p-3 border-gray-400'
                                     rows='10'
+                                    typeof="text"
                                     name="message"
+                                    required
                                 >
                                 </textarea>
                             </div>
-                            <button className='w-full p-4 text-gray-100 mt-4 hover:bg-purple-900 ease-in duration-500'>Send Message</button>
+                            <button
+                                target="_blank"
+                                type="submit"
+                                className='w-full p-4 text-gray-100 mt-4 bg-purple-600 hover:bg-purple-900 ease-in duration-500'
+                            >
+                                Send Message
+                            </button>
                         </form>
                     </div>
                 </div>

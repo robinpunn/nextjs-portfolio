@@ -32,8 +32,16 @@ const ztm = () => {
                     The portfolio site hosting all of the projects was created with a Gatsby template.
                     The ZTM Web Developer course was an excellent resource to learn the foundations of web development.
                 </p>
-                <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-                <button className='px-8 py-2 mt-4'>Code</button>
+                <button className='px-8 py-2 mt-4 mr-8'>
+                    <a href="https://transcendent-unicorn-d1d618.netlify.app/" target="_blank" rel='noreferrer'>
+                        View
+                    </a>
+                </button>
+                <button className='px-8 py-2 mt-4'>
+                    <a href="https://github.com/robinpunn/gatsby-simplefolio" target="_blank" rel="noreferrer">
+                        Code
+                    </a>
+                </button>
             </div>
             <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-600 rounded-xl p-4'>
                 <div className='p-2'>
@@ -61,7 +69,9 @@ const ztm = () => {
                 </div>
             </div>
             <Link href="/#projects">
-                <p className='underline cursor-pointer hover:text-white hover:scale-105 ease-in duration-300'> {"<---"} back</p>
+                <p className='cursor-pointer hover:text-white hover:scale-105 ease-in duration-300'>
+                    {"<---"} back
+                </p>
             </Link>
         </div>
     </div>

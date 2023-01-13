@@ -30,8 +30,16 @@ const fcc = () => {
                     The final project is the actual portfolio page that holds all the other projects.
                     freeCodeCamp was an excellent resource to learn the basics of web development.
                 </p>
-                <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-                <button className='px-8 py-2 mt-4'>Code</button>
+                <button className='px-8 py-2 mt-4 mr-8'>
+                    <a href="https://robinpunn.github.io/fcc-portfolio/" target="_blank" rel='noreferrer'>
+                        View
+                    </a>
+                </button>
+                <button className='px-8 py-2 mt-4'>
+                    <a href="https://github.com/robinpunn/fcc-portfolio" target="_blank" rel="noreferrer">
+                        Code
+                    </a>
+                </button>
             </div>
             <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-600 rounded-xl p-4'>
                 <div className='p-2'>
@@ -50,7 +58,9 @@ const fcc = () => {
                 </div>
             </div>
             <Link href="/#projects">
-                <p className='underline cursor-pointer hover:text-white hover:scale-105 ease-in duration-300'> {"<---"} back</p>
+                <p className='cursor-pointer hover:text-white hover:scale-105 ease-in duration-300'>
+                    {"<---"} back
+                </p>
             </Link>
         </div>
     </div>

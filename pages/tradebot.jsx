@@ -31,8 +31,16 @@ const tradebot = () => {
                     Emphasis was also placed on responsiveness so sizing was defined by relative units.
                     The purpose of this project was to show the power of vanilla CSS.
                 </p>
-                <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-                <button className='px-8 py-2 mt-4'>Code</button>
+                <button className='px-8 py-2 mt-4 mr-8'>
+                    <a href="https://robinpunn.github.io/css-trade-bot/" target="_blank" rel='noreferrer'>
+                        View
+                    </a>
+                </button>
+                <button className='px-8 py-2 mt-4'>
+                    <a href="https://github.com/robinpunn/css-trade-bot" target="_blank" rel="noreferrer">
+                        Code
+                    </a>
+                </button>
             </div>
             <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-600 rounded-xl p-4'>
                 <div className='p-2'>
@@ -53,7 +61,11 @@ const tradebot = () => {
                     </div>
                 </div>
             </div>
-            <Link href="/#projects"><p className='underline cursor-pointer'> {"<---"} back</p></Link>
+            <Link href="/#projects">
+                <p className='cursor-pointer hover:text-white hover:scale-105 ease-in duration-300'>
+                    {"<---"} back
+                </p>
+            </Link>
         </div>
     </div>
   )

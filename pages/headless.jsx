@@ -30,8 +30,16 @@ const headless = () => {
                     GraphQL is used to pull information from WordPress.
                     This headless NextJs blog highlights how different technologies can work together to create a working product.
                 </p>
-                <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-                <button className='px-8 py-2 mt-4'>Code</button>
+                <button className='px-8 py-2 mt-4 mr-8'>
+                <a href="https://blog.robinpunn.com" target="_blank" rel='noreferrer'>
+                    View
+                </a>
+            </button>
+            <button className='px-8 py-2 mt-4'>
+                <a href="https://github.com/robinpunn/nextjs-wordpress-app" target="_blank" rel="noreferrer">
+                    Code
+                </a>
+            </button>
             </div>
             <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-600 rounded-xl p-4'>
                 <div className='p-2'>
@@ -53,7 +61,9 @@ const headless = () => {
                 </div>
             </div>
             <Link href="/#projects">
-                <p className='underline cursor-pointer hover:text-white hover:scale-105 ease-in duration-300'> {"<---"} back</p>
+                <p className='cursor-pointer hover:text-white hover:scale-105 ease-in duration-300'>
+                    {"<---"} back
+                </p>
             </Link>
         </div>
     </div>
