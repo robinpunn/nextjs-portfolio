@@ -10,10 +10,11 @@ const SkillCard = ({name,img}) => {
             <div className='m-auto'>
                 {/*skills image*/}
                 <Image
-                src={img}
-                alt={name}
-                width={100}
-                height={100}
+                  key={name}
+                  src={img}
+                  alt={name}
+                  width={100}
+                  height={100}
                 />
             </div>
             {/*skills text*/}

@@ -46,7 +46,7 @@ const Projects = () => {
             {/*header*/}
             <h2 className='py-4'>What I've Built</h2>
             {/*grid container*/}
-            <div className='grid md:grid-cols-2 gap-24' key={projects.img}>
+            <div className='grid md:grid-cols-2 gap-24'>
               {/*projects placement, cycle through array, pass to ProjectCard component*/}
               {projects.map(project => (
                 <ProjectCard title={project.title} tech={project.tech} img={project.img} link={project.link} />
