@@ -20,7 +20,7 @@ const About = () => {
                   className='rounded-xl'
                   width={500}
                   height={500}
-                  src="/../public/assets/profile.png"
+                  src="../public/assets/profile.png"
                   alt="profile"
               />
             </div>

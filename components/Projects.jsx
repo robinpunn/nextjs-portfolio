@@ -8,31 +8,31 @@ const Projects = () => {
         {
             title: 'TradeBot',
             tech: 'HTML/CSS',
-            img: '/../public/assets/projects/trade.png',
+            img: '../public/assets/projects/trade.png',
             link: '/tradebot'
         },
         {
             title: 'Headless WordPress',
             tech: 'NextJs/WordPress/GraphQl/Tailwind',
-            img: '/../public/assets/projects/blog.png',
+            img: '../public/assets/projects/blog.png',
             link: '/headless'
         },
         {
             title: 'ZeroToMastery',
             tech: 'JavaScript/Node/React/Bootstrap/SQL',
-            img: '/../public/assets/projects/ztm.png',
+            img: '../public/assets/projects/ztm.png',
             link: '/ztm'
         },
         {
             title: 'freeCodeCamp',
             tech: 'HTML/CSS',
-            img: '/../public/assets/projects/free.png',
+            img: '../public/assets/projects/free.png',
             link: '/fcc'
         },
         {
             title: 'Email Developer',
             tech: 'HTML Email Frameworks',
-            img: '/../public/assets/projects/email.png',
+            img: '../public/assets/projects/email.png',
             link: '/email'
         },
     ]
