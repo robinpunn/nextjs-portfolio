@@ -4,6 +4,7 @@ import Link from 'next/link'
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai'
 import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
 import { useRouter } from 'next/router'
+import logo from '../public/assets/logo.png'
 
 
 const Navbar = () => {
@@ -56,7 +57,7 @@ const Navbar = () => {
           <Image
             width={125}
             height={125}
-            src="../public/assets/logo.png"
+            src={logo}
             alt="logo"
           />
         </Link>

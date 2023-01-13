@@ -1,6 +1,6 @@
 import React from 'react'
 import SkillCard from './SkillCard'
-import html from '../public/assets/skills/html1.pung'
+import html from '../public/assets/skills/html1.png'
 import css from '../public/assets/skills/css1.png'
 import js from '../public/assets/skills/javascript.png'
 import node from '../public/assets/skills/node.png'
@@ -42,7 +42,7 @@ const Skills = () => {
             <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
                 {/*skills placement, cycle through array, pass to SkillCards component*/}
                 {skills.map(skill => (
-                    <SkillCard key={skill.img} name={skill.name} img={skill.img} />
+                    <SkillCard name={skill.name} img={skill.img} />
                 ))}
             </div>
         </div>

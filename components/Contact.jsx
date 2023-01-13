@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
-import contact from '../public/assets/projects/contact.png'
+import contact from '../public/assets/contact.png'
 
 const Contact = () => {
   return (
