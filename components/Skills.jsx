@@ -27,7 +27,7 @@ const Skills = () => {
             {/*title*/}
             <h2 className='py-4'>What I Can Do</h2>
             {/*skills container*/}
-            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8' key={skills.img}>
                 {/*skills placement, cycle through array, pass to SkillCards component*/}
                 {skills.map(skill => (
                     <SkillCard name={skill.name} img={skill.img} />
