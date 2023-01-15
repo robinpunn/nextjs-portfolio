@@ -6,7 +6,7 @@ import js from '../public/assets/skills/javascript.png'
 import node from '../public/assets/skills/node.png'
 import react from '../public/assets/skills/react1.png'
 import next from '../public/assets/skills/nextjs.png'
-import sql from '../public/assets/skills/sql.png'
+import psql from '../public/assets/skills/psql.png'
 import git from '../public/assets/skills/github.png'
 import boot from '../public/assets/skills/bootstrap.png'
 import tail from '../public/assets/skills/tailwind1.png'
@@ -22,7 +22,7 @@ const Skills = () => {
         { name: 'Nodejs', img: node},
         { name: 'React', img: react},
         { name: 'NextJs', img: next},
-        { name: 'SQL', img: sql },
+        { name: 'SQL', img: psql },
         { name: 'Github', img: git},
         { name: 'Bootstrap', img: boot},
         { name: 'Tailwind', img: tail},
