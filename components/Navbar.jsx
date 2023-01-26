@@ -20,7 +20,8 @@ const Navbar = () => {
       router.asPath === '/headless' ||
       router.asPath === '/ztm' ||
       router.asPath === '/fcc' ||
-      router.asPath === '/email'
+      router.asPath === '/email' ||
+      router.asPath === '/todo'
     ) {
       setNavBg('transparent')
       setLinkColor('rgb(148 163 184)')

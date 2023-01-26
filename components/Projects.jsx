@@ -5,22 +5,29 @@ import blog from '../public/assets/projects/blog.png'
 import ztm from '../public/assets/projects/ztm.png'
 import free from '../public/assets/projects/free.png'
 import email from '../public/assets/projects/email.png'
+import todo from '../public/assets/projects/todo.png'
 
 
 const Projects = () => {
     {/*Add Projects Here*/}
     const projects = [
         {
-            title: 'TradeBot',
-            tech: 'HTML/CSS',
-            img: trade,
-            link: '/tradebot'
-        },
-        {
             title: 'Headless WordPress',
             tech: 'NextJs/WordPress/GraphQl/Tailwind',
             img: blog,
             link: '/headless'
+        },
+        {
+            title: 'Todo App',
+            tech: 'React/Vanilla CSS',
+            img: todo,
+            link: '/todo'
+        },
+        {
+            title: 'TradeBot',
+            tech: 'HTML/CSS',
+            img: trade,
+            link: '/tradebot'
         },
         {
             title: 'ZeroToMastery',
