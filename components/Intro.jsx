@@ -14,7 +14,7 @@ const Intro = () => {
                     Hi, I'm <span className='text-violet-800'>Robin</span>
                 </h1>
                 <h1 className='py-2 text-gray-800'>
-                    An Aspiring Full Stack Web Developer
+                    A <span className='text-violet-800'>Full-Stack</span> Web Developer
                 </h1>
                 <p className='py-4 text-gray-700  max-w-[70%] mx-auto'>
                     I'm a self taught web developer that strives to learn more and keep building.
@@ -23,7 +23,7 @@ const Intro = () => {
                     As I learn more, I revisit old projects to see how they can be improved.
                     I'm also learning as much as I can about blockchain technology and web3.
                     I'm currently exploring Ethereum and compatible layer 2 blockchains to learn Solidity and smart contract development.
-                    I document everything I learn in my blog.
+                    I document everything I learn in my <span className='text-violet-800'><a className="hover:text-white" href="https://blog.robinpunn.com/" target='_blank' rel='noreferrer'> blog</a></span>.
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <div className='rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-200'>
