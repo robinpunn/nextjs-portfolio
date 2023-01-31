@@ -27,7 +27,7 @@ const Intro = () => {
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <div className='rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-200'>
-                        <a href="https://linkedin.com/in/robin-punnoose-251633164" target='_blank' rel='noreferrer'>
+                        <a href="https://linkedin.com/in/robin-punnoose" target='_blank' rel='noreferrer'>
                             <FaLinkedinIn/>
                         </a>
                     </div>
