@@ -16,10 +16,9 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Add your informatin in the intro section
-- Replace the text in the <p> tag with your own information
-- Replace the links with your own lings:
-
+## Add your information in the intro section
+- Replace the text in the ``<p>`` tag with your own information
+- Replace the links with your own links:
 ```js
     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <div className='rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-200'>
@@ -43,13 +42,24 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Add your information in the about section
 - Add your image to /public/assets/
 - Go to /components/About.jsx and import the image:
-
 ```js
 import profile from '../public/assets/profile.png'
 ```
-- Add your information in the <p> tags located in About.jsx
+- Add your information in the ``<p>`` tags located in About.jsx
 
-## create a new project page
+## Add to the skills section
+- Add an image to /public/assets/skills
+- Go to /components/SkillsMap.jsx and import the image:
+```js
+import skill from '../public/assets/skills/skill.png'
+```
+
+- Add the skill information to the skills array:
+```js
+{ name: 'Skill', img: skill},
+```
+
+## Create a new project page
 - Add an image to /public/assets/projects
 - In the pages folder, create a new project. For example: myProject.jsx
 - Add an image to /public/assets/projects/myProjectBanner.png
@@ -126,14 +136,14 @@ const myProject = () => {
 export default myProject
 ```
 
-## Add your project to Project.jsx
+## Add your project to ProjectMap.jsx
 - Add in image to /public/assets/projects
-- Head to /components/Project.jsx
+- Head to /components/ProjectMap.jsx
 - At the top of the page import the image:
 ```js
 import nameYourImage from '../public/assets/projects/yourImage.png'
 ```
-- Head to the components Project.jsx to add your own project object to the projects array.
+- In ProjectMap.jsx, add your own project object to the projects array.
 
 ```js
     {
