@@ -14,23 +14,35 @@ const Navbar = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (
-      router.asPath === "/tradebot" ||
-      router.asPath === "/headless" ||
-      router.asPath === "/ztm" ||
-      router.asPath === "/fcc" ||
-      router.asPath === "/email" ||
-      router.asPath === "/todo"
-    ) {
-      setNavBg("transparent");
-      setLinkColor("rgb(148 163 184)");
-    } else if (window.scrollY >= 95) {
-      setNavBg("#94A3B8");
-      setLinkColor("rgb(109 40 217)");
-    } else {
-      setNavBg("#94A3B8");
-      setLinkColor("rgb(109 40 217)");
+    function handleScroll() {
+      if (
+        router.asPath === "/tradebot" ||
+        router.asPath === "/headless" ||
+        router.asPath === "/ztm" ||
+        router.asPath === "/fcc" ||
+        router.asPath === "/email" ||
+        router.asPath === "/todo"
+      ) {
+        if (window.scrollY >= 95) {
+          setNavBg("#94A3B8");
+          setLinkColor("rgb(109 40 217)");
+        } else {
+          setNavBg("transparent");
+          setLinkColor("rgb(148 163 184)");
+        }
+      } else {
+        setNavBg("#94A3B8");
+        setLinkColor("rgb(109 40 217)");
+      }
     }
+
+    handleScroll(); // Call the function once on mount to set the initial state
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [router]);
 
   const handleNav = () => {
