@@ -44,7 +44,7 @@ html {
   button {
     @apply shadow-xl shadow-gray-500 rounded-xl uppercase bg-purple-600 text-white;
   }
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 768px) {
     body {
       @apply bg-slate-400 text-purple-600;
     }

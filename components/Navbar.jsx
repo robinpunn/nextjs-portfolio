@@ -24,19 +24,29 @@ const Navbar = () => {
         router.asPath === "/todo"
       ) {
         if (window.scrollY >= 95) {
-          setNavBg("#94A3B8");
-          setLinkColor("rgb(109 40 217)");
+          if (window.innerWidth <= 768) {
+            setNavBg("#CBD5E1");
+            setLinkColor("rgb(109 40 217)");
+          } else {
+            setNavBg("#94A3B8");
+            setLinkColor("rgb(109 40 217)");
+          }
         } else {
           setNavBg("transparent");
           setLinkColor("rgb(148 163 184)");
         }
       } else {
-        setNavBg("#94A3B8");
-        setLinkColor("rgb(109 40 217)");
+        if (window.innerWidth <= 768) {
+          setNavBg("#CBD5E1");
+          setLinkColor("rgb(109 40 217)");
+        } else {
+          setNavBg("#94A3B8");
+          setLinkColor("rgb(109 40 217)");
+        }
       }
     }
 
-    handleScroll(); // Call the function once on mount to set the initial state
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
 
@@ -58,6 +68,19 @@ const Navbar = () => {
       }
     };
     window.addEventListener("scroll", handleShadow);
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setNavBg("#CBD5E1");
+      } else {
+        setNavBg("#94A3B8");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
