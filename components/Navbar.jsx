@@ -16,7 +16,7 @@ const Navbar = () => {
   useEffect(() => {
     function handleScroll() {
       if (
-        router.asPath === "/tradebot" ||
+        router.asPath === "/chess" ||
         router.asPath === "/headless" ||
         router.asPath === "/ztm" ||
         router.asPath === "/fcc" ||
