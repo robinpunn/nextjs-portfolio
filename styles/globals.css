@@ -18,6 +18,7 @@ html {
 @layer base {
   body {
     @apply bg-slate-300 text-stone-900;
+    caret-color: transparent
   }
 
   h1,

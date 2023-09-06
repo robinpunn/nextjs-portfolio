@@ -101,19 +101,19 @@ const Navbar = () => {
         {/*div to hold links and humberger menu < med screens*/}
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-            <li className="ml-10 font-extrabold text-sm uppercase p-1 hover:shadow-light hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
+            <li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
               <Link href="/">Home</Link>
             </li>
-            <li className="ml-10 font-extrabold text-sm uppercase p-1 hover:shadow-light hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
+            <li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
               <Link href="/#about">About</Link>
             </li>
-            <li className="ml-10 font-extrabold text-sm uppercase p-1 hover:shadow-light hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
+            <li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
               <Link href="/#skills">Skills</Link>
             </li>
-            <li className="ml-10 font-extrabold text-sm uppercase p-1 hover:shadow-light hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
+            <li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
               <Link href="/#projects">Projects</Link>
             </li>
-            <li className="ml-10 font-extrabold text-sm uppercase p-1 hover:shadow-light hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
+            <li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
               <Link href="/#contact">Contact</Link>
             </li>
           </ul>
