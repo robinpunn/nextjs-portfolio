@@ -1,9 +1,8 @@
 // import trade from '../public/assets/projects/trade.png'
 import chess from "../public/assets/projects/chess.png";
 import blog from "../public/assets/projects/blog.png";
-import ztm from "../public/assets/projects/ztm.png";
 import free from "../public/assets/projects/free.png";
-import email from "../public/assets/projects/email.png";
+import github from "../public/assets/projects/github.png";
 import todo from "../public/assets/projects/todo.png";
 import fantasy from "../public/assets/projects/fantasyPayments.png";
 
@@ -13,13 +12,19 @@ import fantasy from "../public/assets/projects/fantasyPayments.png";
 const projects = [
   {
     title: "Fantasy Payments",
-    tech: "React/CSS",
+    tech: "Solidity/TypeScript/React/CSS",
     img: fantasy,
     link: "/fantasy",
   },
   {
+    title: "Good First Issues",
+    tech: "TypeScript/React/CSS",
+    img: github,
+    link: "/github",
+  },
+  {
     title: "Chess Vision Game",
-    tech: "React/CSS",
+    tech: "TypeScript/React/CSS",
     img: chess,
     link: "/chess",
   },
@@ -31,7 +36,7 @@ const projects = [
   },
   {
     title: "Headless WordPress",
-    tech: "NextJs/WordPress/GraphQl/Tailwind",
+    tech: "Nextjs/WordPress/GraphQl/Tailwind",
     img: blog,
     link: "/headless",
   },
@@ -40,12 +45,6 @@ const projects = [
     tech: "HTML/CSS",
     img: free,
     link: "/fcc",
-  },
-  {
-    title: "Email Developer",
-    tech: "HTML Email Frameworks",
-    img: email,
-    link: "/email",
   },
 ];
 

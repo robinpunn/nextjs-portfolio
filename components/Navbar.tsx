@@ -20,11 +20,11 @@ const Navbar = () => {
         router.asPath === "/headless" ||
         router.asPath === "/fantasy" ||
         router.asPath === "/fcc" ||
-        router.asPath === "/email" ||
+        router.asPath === "/github" ||
         router.asPath === "/todo"
       ) {
-        if (window.scrollY >= 95) {
-          if (window.innerWidth <= 768) {
+        if (window.scrollY >= 98) {
+          if (window.innerWidth <= 460) {
             setNavBg("#CBD5E1");
             setLinkColor("rgb(109 40 217)");
           } else {
@@ -36,7 +36,7 @@ const Navbar = () => {
           setLinkColor("rgb(148 163 184)");
         }
       } else {
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= 460) {
           setNavBg("#CBD5E1");
           setLinkColor("rgb(109 40 217)");
         } else {

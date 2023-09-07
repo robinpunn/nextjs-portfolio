@@ -13,12 +13,13 @@
 html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
+  overflow-x: hidden;
 }
 
 @layer base {
   body {
     @apply bg-slate-300 text-stone-900;
-    caret-color: transparent
+    caret-color: transparent;
   }
 
   h1,
