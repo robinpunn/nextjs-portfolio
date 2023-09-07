@@ -5,11 +5,18 @@ import ztm from "../public/assets/projects/ztm.png";
 import free from "../public/assets/projects/free.png";
 import email from "../public/assets/projects/email.png";
 import todo from "../public/assets/projects/todo.png";
+import fantasy from "../public/assets/projects/fantasyPayments.png";
 
 {
   /*Add Projects Here*/
 }
 const projects = [
+  {
+    title: "Fantasy Payments",
+    tech: "React/CSS",
+    img: fantasy,
+    link: "/fantasy",
+  },
   {
     title: "Chess Vision Game",
     tech: "React/CSS",
@@ -27,12 +34,6 @@ const projects = [
     tech: "NextJs/WordPress/GraphQl/Tailwind",
     img: blog,
     link: "/headless",
-  },
-  {
-    title: "ZeroToMastery",
-    tech: "JavaScript/Node/React/Bootstrap/SQL",
-    img: ztm,
-    link: "/ztm",
   },
   {
     title: "freeCodeCamp",

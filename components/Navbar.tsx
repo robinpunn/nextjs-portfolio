@@ -18,7 +18,7 @@ const Navbar = () => {
       if (
         router.asPath === "/chess" ||
         router.asPath === "/headless" ||
-        router.asPath === "/ztm" ||
+        router.asPath === "/fantasy" ||
         router.asPath === "/fcc" ||
         router.asPath === "/email" ||
         router.asPath === "/todo"
