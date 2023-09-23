@@ -4,7 +4,7 @@ import fantasyBanner from "../public/assets/projects/fantasyPaymentsBanner.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const ztm = () => {
+const fantasy = () => {
   return (
     <div className="w-full overflow-y-hidden">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -56,7 +56,7 @@ const ztm = () => {
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
             <a
-              href="https://blockchain-fantasy-eaur3nc7a-robinpunn.vercel.app/"
+              href="https://blockchain-fantasy.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -110,4 +110,4 @@ const ztm = () => {
   );
 };
 
-export default ztm;
+export default fantasy;
