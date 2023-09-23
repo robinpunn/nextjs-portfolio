@@ -4,7 +4,7 @@ import projects from "./ProjectsMap";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full">
+    <div id="projects" className="w-full mt-24">
       {/*container*/}
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         {/*text*/}
