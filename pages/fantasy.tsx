@@ -31,15 +31,27 @@ const fantasy = () => {
             developers use to test out their Ethereum blockchain applications.
             The project was built with Solidity, TypeScript, React, and Vite. It
             was styled with Vanilla CSS. The project also used{" "}
-            <a href="https://www.rainbowkit.com/" target="_blank">
+            <a
+              href="https://www.rainbowkit.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Rainbowkit
             </a>{" "}
             and{" "}
-            <a href="https://docs.ethers.org/v6/" target="_blank">
+            <a
+              href="https://docs.ethers.org/v6/"
+              target="_blank"
+              rel="noreferrer"
+            >
               ethers.js
             </a>{" "}
             for wallet functionality. This was a final project for{" "}
-            <a href="https://university.alchemy.com/" target="_blank">
+            <a
+              href="https://university.alchemy.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Alchemy University
             </a>
             . This DApp was created as a means to handle payments for fantasy
@@ -48,6 +60,7 @@ const fantasy = () => {
             <a
               href="https://www.coingecko.com/en/coins/ethereum"
               target="_blank"
+              rel="noreferrer"
             >
               Ethereum
             </a>
