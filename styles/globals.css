@@ -44,11 +44,11 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-500 rounded-xl uppercase bg-purple-600 text-white;
+    @apply shadow-lg shadow-gray-700 rounded-xl uppercase bg-purple-600 text-purple-900;
   }
   @media screen and (min-width: 768px) {
     body {
-      @apply bg-slate-400 text-purple-600;
+      @apply bg-slate-400 text-purple-900;
     }
   }
 }

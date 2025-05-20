@@ -104,9 +104,9 @@ const Navbar = () => {
             <li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
               <Link href="/">Home</Link>
             </li>
-            <li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
+	    {/*<li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
               <Link href="/#about">About</Link>
-            </li>
+            </li>*/}
             <li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
               <Link href="/#skills">Skills</Link>
             </li>

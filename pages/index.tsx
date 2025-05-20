@@ -16,13 +16,13 @@ export default function Home() {
         <title>Robin | Web Developer</title>
         <meta
           name="description"
-          content="I'm a web developer that loves to learn.  Front-end. Back-end. Blockchain.  The learning never ends."
+          content="Developer in progress."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/logo.png" />
       </Head>
       <Intro />
-      <About />
+      {/*<About />*/}
       <Skills />
       <Projects />
       <Contact />
