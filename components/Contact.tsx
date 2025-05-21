@@ -14,7 +14,7 @@ const Contact = () => {
         {/*container*/}
         <div className="flex justify-center items-center">
           {/*left*/}
-          <div className="flex justify-center text-center col-span-3 lg:col-span-2 lg:w-2/3 h-full shadow-xl shadow-gray-600 rounded-xl p-4">
+          <div className="flex justify-center text-center col-span-3 lg:col-span-2 lg:w-2/3 h-full shadow-xl shadow-gray-800 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               {/*info div*/}
               <div>
@@ -29,7 +29,7 @@ const Contact = () => {
               <div>
                 <p className="uppercase pt-8 font-bold">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-violet-800 hover:text-white">
+                  <div className="rounded-full shadow-lg shadow-gray-800 p-3 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-violet-800 hover:text-white">
                     <a
                       href="https://linkedin.com/in/robin-punnoose"
                       target="_blank"
@@ -38,7 +38,7 @@ const Contact = () => {
                       <FaLinkedinIn />
                     </a>
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-violet-800 hover:text-white">
+                  <div className="rounded-full shadow-lg shadow-gray-800 p-3 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-violet-800 hover:text-white">
                     <a
                       href="https://github.com/robinpunn"
                       target="_blank"
@@ -47,7 +47,7 @@ const Contact = () => {
                       <FaGithub />
                     </a>
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-violet-800 hover:text-white">
+                  <div className="rounded-full shadow-lg shadow-gray-800 p-3 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-violet-800 hover:text-white">
                     <a
                       href={`mailto:robin.punnoose@protonmail.com`}
                       target="_blank"
@@ -65,7 +65,7 @@ const Contact = () => {
         {/*scroll to top*/}
         <div className="flex justify-center py-12">
           <Link href="/">
-            <div className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-125 ease-in duration-300 hover:bg-violet-800 hover:text-white">
+            <div className="rounded-full shadow-lg shadow-gray-800 p-3 cursor-pointer hover:scale-125 ease-in duration-300 hover:bg-violet-800 hover:text-white">
               <HiOutlineChevronDoubleUp className="m-auto" size={30} />
             </div>
           </Link>

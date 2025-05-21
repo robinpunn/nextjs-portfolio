@@ -10,7 +10,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#94A3B8");
-  const [linkColor, setLinkColor] = useState("rgb(109 40 217)");
+  const [linkColor, setLinkColor] = useState("rgb(91, 33, 182)");
   const router = useRouter();
 
   useEffect(() => {
@@ -101,19 +101,19 @@ const Navbar = () => {
         {/*div to hold links and humberger menu < med screens*/}
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-            <li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
+            <li className="ml-10 font-extrabold text-lg uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
               <Link href="/">Home</Link>
             </li>
-	    {/*<li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
+	    {/*<li className="ml-10 font-extrabold text-lg uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
               <Link href="/#about">About</Link>
             </li>*/}
-            <li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
+            <li className="ml-10 font-extrabold text-lg uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
               <Link href="/#skills">Skills</Link>
             </li>
-            <li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
+            <li className="ml-10 font-extrabold text-lg uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
               <Link href="/#projects">Projects</Link>
             </li>
-            <li className="ml-10 font-extrabold text-sm uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
+            <li className="ml-10 font-extrabold text-lg uppercase p-1  hover:text-white hover:scale-125 hover:rounded-lg ease-in duration-300">
               <Link href="/#contact">Contact</Link>
             </li>
           </ul>
@@ -146,13 +146,13 @@ const Navbar = () => {
               {/*close sidebar*/}
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer"
+                className="rounded-full shadow-lg shadow-gray-800 p-3 cursor-pointer"
               >
                 <AiOutlineClose />
               </div>
             </div>
             {/*statement*/}
-            <div className="border-b border-gray-500 my-4">
+            <div className="border-b border-gray-800 my-4">
               <p className="w-[85%] md:w-[90%] py-4">
                 Learn and Build Everyday
               </p>
@@ -162,19 +162,19 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             {/*menu*/}
             <ul className="uppercase">
-              <li onClick={() => setNav(false)} className="mb-8 text-sm">
+              <li onClick={() => setNav(false)} className="mb-8 text-lg">
                 <Link href="/">Home</Link>
               </li>
-              <li onClick={() => setNav(false)} className="my-8 text-sm">
+              <li onClick={() => setNav(false)} className="my-8 text-lg">
                 <Link href="/#about">About</Link>
               </li>
-              <li onClick={() => setNav(false)} className="my-8 text-sm">
+              <li onClick={() => setNav(false)} className="my-8 text-lg">
                 <Link href="/#skills">Skills</Link>
               </li>
-              <li onClick={() => setNav(false)} className="my-8 text-sm">
+              <li onClick={() => setNav(false)} className="my-8 text-lg">
                 <Link href="/#projects">Projects</Link>
               </li>
-              <li onClick={() => setNav(false)} className="my-8 text-sm">
+              <li onClick={() => setNav(false)} className="my-8 text-lg">
                 <Link href="/#contact">Contact</Link>
               </li>
             </ul>
@@ -182,7 +182,7 @@ const Navbar = () => {
             <div className="pt-10 sm:pt-40">
               <p className="uppercase tracking-wide">Get in touch with me</p>
               <div className="flex items center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-105 ease-in duration-200">
+                <div className="rounded-full shadow-lg shadow-gray-800 p-3 cursor-pointer hover:scale-105 ease-in duration-200">
                   <a
                     href="https://linkedin.com/in/robin-punnoose"
                     target="_blank"
@@ -191,7 +191,7 @@ const Navbar = () => {
                     <FaLinkedinIn />
                   </a>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-105 ease-in duration-200">
+                <div className="rounded-full shadow-lg shadow-gray-800 p-3 cursor-pointer hover:scale-105 ease-in duration-200">
                   <a
                     href="https://github.com/robinpunn"
                     target="_blank"
@@ -200,7 +200,7 @@ const Navbar = () => {
                     <FaGithub />
                   </a>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-105 ease-in duration-200">
+                <div className="rounded-full shadow-lg shadow-gray-800 p-3 cursor-pointer hover:scale-105 ease-in duration-200">
                   <a
                     href="mailto:robin.punnoose@protonmail.com"
                     target="_blank"
