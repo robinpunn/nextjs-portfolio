@@ -165,9 +165,9 @@ const Navbar = () => {
               <li onClick={() => setNav(false)} className="mb-8 text-lg">
                 <Link href="/">Home</Link>
               </li>
-              <li onClick={() => setNav(false)} className="my-8 text-lg">
+	      {/*<li onClick={() => setNav(false)} className="my-8 text-lg">
                 <Link href="/#about">About</Link>
-              </li>
+              </li>*/}
               <li onClick={() => setNav(false)} className="my-8 text-lg">
                 <Link href="/#skills">Skills</Link>
               </li>
